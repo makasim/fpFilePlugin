@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.6" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>fpFilePlugin</name>
+  <channel>plugins.symfony-project.org</channel>
+  <summary>A file object oriented layer</summary>
+  <description>Provide classes like a File, PublicFile, PrivateFile under symfony framework</description>
+	<lead>
+	  <name>Maksim Kotlyar</name>
+	  <user>maksim_ka</user>
+	  <email>mkotlar@ukr.net</email>
+	  <active>yes</active>
+  </lead>
+  <date>2010-06-25</date>
+  <time>14:00:00</time>
+  <version>
+    <release>1.0.1</release>
+    <api>1.2.0</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>-</notes>
+  <contents>
+    <dir name="/">
+      <dir name="config">
+        <file role="data" name="app.yml" />
+      </dir>
+      <dir name="lib">
+        <dir name="file">
+          <file role="data" name="fpFile.php" />
+          <file role="data" name="fpNotExistFile.php" />
+          <file role="data" name="fpPrivateFile.php" />
+          <file role="data" name="fpPublicFile.php" />
+          <file role="data" name="fpZipFile.php" />
+        </dir>  
+        <dir name="folder">
+          <file role="data" name="fpFolder.php" />
+          <file role="data" name="fpPublicFolder.php" />
+          <file role="data" name="fpTempFolder.php" />
+        </dir>
+        <file role="data" name="fpFileException.php" />
+      </dir>
+      <dir name="test">
+        <dir name="phpunit">
+          <dir name="fixtures">
+            <dir name="common" />
+            <dir name="utils">
+              <file role="data" name="linux_rulez.gif.zip" />
+            </dir>
+          </dir>
+          <dir name="utils">
+            <file role="data" name="fpFileTestCase.php" />
+            <file role="data" name="fpFolderTestCase.php" />
+            <file role="data" name="fpNotExistFileTestCase.php" />
+            <file role="data" name="fpPublicFileTestCase.php" />
+	        <file role="data" name="fpPublicFolderTestCase.php" />
+	        <file role="data" name="fpTempFolderTestCase.php" />
+	        <file role="data" name="fpZipFileTestCase.php" />
+          </dir>
+          <file role="data" name="fpFileRootTestSuite.php" />
+        </dir>
+      </dir>
+		  <file role="data" name="LICENSE" />
+		  <file role="data" name="README" />
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php><min>5.2.4</min></php>
+      <pearinstaller><min>1.4.1</min></pearinstaller>
+      <package>
+				<name>symfony</name>
+				<channel>pear.symfony-project.com</channel>
+				<min>1.2.0</min>
+				<max>1.4.40</max>
+      </package>
+      <package>
+        <name>sfPhpunitPlugin</name>
+        <channel>plugins.symfony-project.org</channel>
+        <min>1.0.11</min>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease />
+  <changelog>
+    <release>
+      <version>
+        <release>1.0.1</release>
+          <api>1.2.0</api>
+        </version>
+        <stability>
+         <release>stable</release>
+         <api>1.2.0</api>
+        </stability>
+        <license uri="http://www.symfony-project.com/license">MIT license</license>
+        <date>2010-06-25</date>
+        <license>MIT</license>
+        <notes>
+          * add test to the package 
+        </notes>
+    </release>
+    <release>
+      <version>
+        <release>1.0.0</release>
+          <api>1.2.0</api>
+        </version>
+        <stability>
+         <release>stable</release>
+         <api>1.2.0</api>
+        </stability>
+        <license uri="http://www.symfony-project.com/license">MIT license</license>
+        <date>2010-06-25</date>
+        <license>MIT</license>
+        <notes>
+          * init release 
+        </notes>
+    </release>
+</changelog>
+</package>

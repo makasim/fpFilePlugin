@@ -1,0 +1,4 @@
+all:
+  web_dir: %SF_WEB_DIR%
+  data_dir: %SF_WEB_DIR%
+  temp_dir: %SF_ROOT_DIR%/tmp
