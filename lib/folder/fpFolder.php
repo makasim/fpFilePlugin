@@ -7,6 +7,14 @@ class fpFolder extends fpFile implements IteratorAggregate
     $this->_path = $path;
     $this->create();
   }
+  
+  /**
+   * @return bool whether the file exist or not. 
+   */
+  public function exists()
+  {
+    return file_exists($this->_path) && is_dir($this->_path);
+  }
 
   /**
    * @return Folder

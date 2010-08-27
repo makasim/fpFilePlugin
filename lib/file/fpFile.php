@@ -101,7 +101,7 @@ class fpFile
    */
   public function exists()
   {
-    return file_exists($this->_path);
+    return file_exists($this->_path) && is_file($this->_path);
   }
   
   /**
